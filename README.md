@@ -13,6 +13,8 @@ This is a message generator program. Every time the program is run, the user wil
 
 I intend to create a classpect and land generator in the style of those found in the webcomic [homestuck](https://homestuck.net/). This will take the form of:
 
-"You are a CLASS of ASPECT and your land is the Land Of THING and THING"
+"You are a CLASS of ASPECT and your land is the Land Of THING1 and THING2"
 
 E.g. "You are a Knight of Blood and your land is the Land of Pulse and Haze"
+
+The type of land words that the reader can recieve will be determined by the aspect that you have randomly drawn.
