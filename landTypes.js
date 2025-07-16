@@ -1,1 +1,34 @@
 //Types of land words with aspect information attached for sorting
+let landOne = {
+    'Blood' : ['Pulse', 'Chains', 'Ruby', 'Copper', 'Bonds', 'Exsanguination', 'Canals', 'Sages', 'Trenches', 'War', 'Canyons', 'Walls', 'Stakes', 'Weight', 'Duty', 'Cast', 'Regulations', 'Dust', 'Blades', 'Execution', 'Genes', 'Beat', 'Characters', 'Donation'],
+    'Breath' : ['Reeds', 'Melody', 'Planes', 'Words', 'Flight', 'Typhoons', 'Skies', 'Birds', 'Brass', 'Sailboats', 'Dawn', 'Silence', 'Libraries', 'Bats', 'Valleys', 'Ventriloquism', 'Teeth', 'Stillness', 'Poison', 'Choirs', 'Frequency', 'Harmony', 'Tremor', 'Wax'],
+    'Doom' : ['Sepulchre', 'Downloads', 'Script', 'Fate', 'Spirit', 'Tarot', 'Brains', 'Patches', 'Graves', 'Autopsy', 'Thunder', 'Phrenology', 'Cards', 'Fossils', 'Epitaphs', 'Inscriptions', 'Jade', 'Nooses', 'Resurrection', 'Bones', 'Prognosis', 'Crescendo', 'Caskets', 'Code'],
+    'Heart' : ['Mirrors', 'Reflection', 'Tunnels', 'Lightning', 'Puppets', 'Mimicry', 'Costumes', 'Ponds', 'Masks', 'Dialogue', 'Typewriters', 'Cocoons', 'Dreams', 'Networks', 'Sugar', 'Hospitals', 'Bloom', 'Epitaph', 'Marble', 'Statues', 'Dynasties', 'Horoscopes', 'Stages', 'Spotlights'],
+    'Hope' : ['Canvas', 'Heroes', 'Angels', 'Forges', 'Fae', 'Pyrite', 'Plinths', 'Currents', 'Valkyries', 'Myth', 'Brilliance', 'Placebo', 'Clouds', 'Mountains', 'Grails', 'Flight', 'Magicians', 'Discovery', 'Treasure', 'Sandcastles', 'Trails', 'Cities', 'Kaleidoscopes', 'Exploration', 'Pillars'],
+    'Life' : ['Gauze', 'Silver', 'Salve', 'Germination', 'Farms', 'Resurrection', 'Rabbits', 'Algae', 'Seances', 'Reefs', 'Division', 'Cells', 'Plasma', 'Mint', 'Guardians', 'Fermentation', 'Ivy', 'Honey', 'Amber', 'Altars', 'Grass', 'Iodine', 'Shoots', 'Seeds'],
+    'Light' : ['Neon', 'Heat', 'Dice', 'Crystal', 'Prognostication', 'Destinations', 'Divination', 'Dowsing', 'Casinos', 'Clover', 'Radiance', 'Torches', 'Vision', 'Trails', 'Treasure', 'Observatories', 'Encyclopaedias', 'Glitter', 'Prisms', 'Periscopes', 'Ships', 'Ladybirds', 'Mirrors', 'Arenas'],
+    'Mind' : ['Thought', 'Retcon', 'Chess', 'Nets', 'Migraine', 'Riddles', 'Forgery', 'Law', 'Chaos', 'Tomes', 'Acts', 'Scripts', 'Storm', 'Labyrinths', 'Orchestration', 'Scales', 'Mist', 'Pathways', 'Spirits', 'Chase', 'Type', 'Classification', 'Aqueducts', 'Decision'],
+    'Rage' : ['Tragedy', 'Tents', 'Satire', 'Protest', 'Bedrock', 'Courtrooms', 'Hatchets', 'Rain', 'Clarity', 'Rings', 'Graffiti', 'Masks', 'Tricks', 'Silence', 'Steel', 'Cats', 'Metaphor', 'Dance', 'Parrots', 'Fury', 'Treason', 'Misdirection', 'Pentothal', 'Jesters'],
+    'Space' : ['Travel', 'Propagation', 'Distance', 'Art', 'Seams', 'Particles', 'Expanse', 'Spirals', 'Ice', 'Cartography', 'Paint', 'Patterns', 'Satellites', 'Hatcheries', 'Rifts', 'Mountains', 'Exploration', 'Directions', 'Comets', 'Mushrooms', 'Scope', 'Miniatures', 'Springs', 'Sea'],
+    'Time' : ['Ruins', 'Beat', 'Seconds', 'Records', 'Prophecy', 'Rhythm', 'Repetition', 'Cycles', 'Quartz', 'Gears', 'Tides', 'Migration', 'Tardigrades', 'Sunsets', 'Scrap', 'Meltwater', 'Factories', 'Magma', 'Formaldehyde', 'Tombs', 'Motion', 'Mayflies', 'Chiptune', 'Telomerase'],
+    'Void' : ['Ink', 'Retractions', 'Caverns', 'Marble', 'Expeditions', 'Transitions', 'Alchemy', 'Lakes', 'Eclipse', 'Chests', 'Subterfuge', 'Islands', 'Libraries', 'Laboratories', 'Quicksand', 'Blizzards', 'Geodes', 'Hyperbole', 'Blackouts', 'Chalk', 'Microfilm', 'Chameleons', 'Mutation', 'Searchlights']
+    };
+
+let landTwo = {
+    'Blood' : ['Iron', 'Bleed', 'Needles', 'Flow', 'Cells', 'Networks', 'Photographs', 'Garnet', 'Treaties', 'Weaving', 'Rivers', 'Borders', 'Vessels', 'Coral', 'Dialectics', 'Dynasty', 'Rails', 'Desire', 'Belonging', 'Trial', 'Circuits', 'Rust', 'Archetypes', 'Pennies'],
+    'Breath' : ['Breeze', 'Whispers', 'Chimes', 'Poetry', 'Clouds', 'Song', 'Turbines', 'Pipes', 'Kites', 'Jetstreams', 'Keys', 'Microphones', 'Symphonies', 'Darkness', 'Flags', 'Oration', 'Bubbles', 'Hydrogen', 'Fog', 'Radio', 'Wavelengths', 'Discord', 'Feathers', 'Sirens'],
+    'Doom' : ['Infernos', 'Disaster', 'Skulls', 'Fatality', 'Lifelines', 'Exploits', 'Glitch', 'Updates', 'Guides', 'Metal', 'Caskets', 'Oil', 'Plastic', 'Omens', 'Entropy', 'Prophecies', 'Ghosts', 'Diversions', 'Mines', 'Hourglasses', 'Cemeteries', 'Encore', 'Durge', 'Cryogenics'],
+    'Heart' : ['Attack', 'Doppelgangers', 'Pulse', 'Portraits', 'Prose', 'String', 'Roles', 'Daffodils', 'Meditation', 'Mazes', 'Aviaries', 'Metamorphosis', 'Paper', 'Meadows', 'Circulation', 'Plateaus', 'Memorials', 'Clay', 'Sculpture', 'Silver', 'Categories', 'Cages', 'Circuses', 'Eyes'],
+    'Hope' : ['Chapels', 'Dragons', 'Faith', 'Fantasy', 'Destiny', 'Zircon', 'Determination', 'Destiny', 'Olympus', 'Monsters', 'Smoke', 'Miracles', 'Wishes', 'Cranes', 'Mirage', 'Gossamer', 'Cinema', 'Frontiers', 'Games', 'Earthquakes', 'Haze', 'Kingdoms', 'Trials', 'Nobility', 'Pitfalls'],
+    'Life' : ['Crystal', 'Dew', 'Rosebuds', 'Grafts', 'Bloom', 'Crowds', 'Cotton', 'Bakeries', 'Glow', 'Balms', 'Panacea', 'Saline', 'Ultraviolet', 'Moss', 'Ambrosia', 'Foam', 'Sanctury', 'Hives', 'Glass', 'Warmth', 'Rainforests', 'Oxygen', 'Crabs', 'Gardens'],
+    'Light' : ['Glow', 'Fortune', 'Shine', 'Cards', 'Bioluminescence', 'Cartography', 'Compasses', 'Daylight', 'Gold', 'Crimson', 'Heroism', 'Mirage', 'Prophecies', 'Talismans', 'Luminol', 'Totems', 'Owls', 'Guides', 'Codes', 'Currents', 'Tactics', 'Omens', 'Coins', 'Fame'],
+    'Mind' : ['Contemplation', 'Edits', 'Bluff', 'Neurons', 'Auras', 'Mazes', 'Investigations', 'Heists', 'Chalk', 'Synonyms', 'Theatre', 'Shock', 'Trees', 'Sketches', 'Court', 'Variables', 'Lightning', 'Divergence', 'Stakeouts', 'Trolleys', 'Prediction', 'Predetermination', 'Flood', 'Guide'],
+    'Rage' : ['Circuses', 'Denial', 'Comedy', 'Alleyways', 'Shields', 'Execution', 'Vengeance', 'Laughter', 'Reality', 'Disillusionment', 'Anarchy', 'Faces', 'Mirrors', 'Glass', 'Clubs', 'Smiles', 'Parables', 'Bells', 'Dunes', 'Fire', 'Towers', 'Cyanide', 'Pantomime', 'Mime'],
+    'Space' : ['Journeys', 'Nebulas', 'Dimension', 'Sculptures', 'Stars', 'Planetariums', 'Emptiness', 'Frogs', 'Charts', 'Orbits', 'Design', 'Protons', 'Seeds', 'Warmth', 'Lava', 'Eruptions', 'Inventions', 'Sandboxes', 'Signposts', 'Croaking', 'Scale', 'Models', 'Snowfall', 'Style'],
+    'Time' : ['Archaeology', 'Metronomes', 'Speedruns', 'Tempo', 'Spoilers', 'Measure', 'Erosion', 'Seasons', 'Clocks', 'Mechanisms', 'Ticking', 'Trains', 'Icebergs', 'Song', 'Rust', 'Thaw', 'Automation', 'Obsidian', 'Preservation', 'Chrome', 'Tracks', 'Organs', 'Bass', 'Boulders'],
+    'Void' : ['Abyss', 'Ciphers', 'Fog', 'Paint', 'Dusk', 'Stations', 'Inversion', 'Masquerades', 'Magnetism', 'Steam', 'Mystery', 'Tundra', 'Microscopes', 'Deserts', 'Anonymity', 'Avalanches', 'Chaos', 'Quarries', 'Generators', 'Acetone', 'Impressionism', 'Molts', 'Submarines', 'Shade']
+    };
+
+
+
+export { landOne, landTwo };
