@@ -99,5 +99,18 @@ landRandomiser()
 //console.log(randLandOne)
 //console.log(randLandTwo)
 
+const randAll = () => {
+    randClass = classpectRand(classHS)
+    randAspect = classpectRand(aspects)
+    landRandomiser()
+    let output = `You are the ${randClass} of ${randAspect} and your land is the Land of ${randLandOne} and ${randLandTwo}.`
+    document.getElementById("output").innerText = output
+}
+
+
+
 console.log(`You are the ${randClass} of ${randAspect} and your land is the Land of ${randLandOne} and ${randLandTwo}.`)
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("generateBtn").addEventListener("click", randAll);
+});
